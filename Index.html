@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/Calculadora.png" type="image/x-icon">
+    <title>Calculadora de Churrasco</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><strong>CALCULADORA DE CHURRASCO</strong></h1>
+        <form id="churrasco-form">
+            <label for="homens">&#x1F468 Homens</label>
+            <input type="number" id="homens" name="homens" required>
+            
+            <label for="mulheres">&#x1F469 Mulheres</label>
+            <input type="number" id="mulheres" name="mulheres" required>
+            <label for="criancas">&#x1F9D2 Crianças</label>
+            <input type="number" id="criancas" name="criancas" required>
+            
+            <button type="button" onclick="calcularChurrasco()">Calcular</button>
+        </form>
+        
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
